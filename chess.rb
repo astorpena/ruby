@@ -2,12 +2,12 @@
 
 # define piece class and attributes
 class Piece
-    # define the death function (if piece is alive, kill it.)
-    attr_accessor :nam, :alg, :viv, :xps, :yps, :lxp, :lyp
+    attr_accessor :nam, :alg, :viv, :pos
     # define defaults for attributes
     def vivi
         @viv=true
     end
+    # define the death function (if piece is alive, kill it.)
     def die
         if @viv
             @viv=false
@@ -15,12 +15,13 @@ class Piece
     end
 end
 
+# define king class and attributes
 class King < Piece
     attr_accessor :check, :chkmt
     def initialcheck
         @check=false
     end
-    def move(dir)
+    def move(mov)
         #something
     end
 end
