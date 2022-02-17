@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 a=gets.chomp('What is a?')
 b=gets.chomp('What is b?')
 c=gets.chomp('What is c?')
