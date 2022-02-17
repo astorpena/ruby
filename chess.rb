@@ -17,6 +17,10 @@ end
 
 # define king class and attributes
 class King < Piece
+    @@classname = "King"
+    def self.pnam
+      @@classname
+    end
     attr_accessor :check, :chkmt
     def initialcheck
         @check=false
@@ -38,3 +42,4 @@ board=[
            ['h1','h2','h3','h4','h5','h6','h7','h8']
 ]
 ki1.vivi
+ki1.pnam
