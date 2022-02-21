@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 a=gets.chomp('What is a?').to_i
 b=gets.chomp('What is b?').to_i
 c=gets.chomp('What is c?').to_i
