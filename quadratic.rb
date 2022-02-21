@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 
-a=gets.chomp('What is a?')
-b=gets.chomp('What is b?')
-c=gets.chomp('What is c?')
+a=gets.chomp('What is a?').to_i
+b=gets.chomp('What is b?').to_i
+c=gets.chomp('What is c?').to_i
 d=(b*b)-(4*a*c)
-if(d<0):
-    puts('The discriminant is less than zero. There are no real solutions.')
-    exit
-puts('x = (-#{b} \u00b1', sqrt(d),')\n     /', (2 * a))
+if(d<0)
+    abort('The discriminant is less than zero. There are no real solutions.')
+end
+print("x = (-#{b} \u00b1", " ", Math.sqrt(d),")\n     /", " ", 2 * a, "\n")
